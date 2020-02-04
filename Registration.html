@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+</style>
+</head>
+<body onload="showPrompt()">
+    <script>
+    function showPrompt()
+{
+    prompt("Welcome, please enter your name to continue...");
+    alert("you are going to register yourself");
+}
+</script>
+<script>
+function validateForm()                                  
+{ 
+    //alert("Please enter a valid e-mail address.");
+    var name=document.forms["myForm"]["name"].value;               
+    var email= document.forms["myForm"]["email"].value;    
+    var phone = document.forms["myForm"]["mobno"].value;      
+    var address = document.forms["myForm"]["address"].value;  
+    alert("Please enter a valid e-mail address.");
+    if(name.value=="")                                  
+    { 
+        alert("Please enter your name."); 
+        name.focus(); 
+        return false; 
+    } 
+    if (email.value=="")                                   
+    { 
+        alert("Please enter a valid e-mail address."); 
+        email.focus(); 
+        return false; 
+    }
+    if (phone.value=="")                           
+    { 
+        alert("Please enter your telephone number."); 
+        phone.focus(); 
+        return false; 
+    } 
+    if (address.value=="")                               
+    { 
+        alert("Please enter your address."); 
+        address.focus(); 
+        return false; 
+    }
+    return true; 
+}
+</script>
+<h1 align="center">Registration:</h1>
+<form name="myForm" onsubmit="return validateForm()">
+    Name:
+    <input type="text" name="name" placeholder="Enter your name">
+    <br>
+    <br>
+    Gender:
+        <input type="radio" name="gender" value="male" checked> Male
+        <input type="radio" name="gender" value="female"> Female
+        <input type="radio" name="gender" value="other"> Other<br><br>
+    Mobile:
+        <input type="text" name="mobNo" placeholder="Enter your mob_no.">
+        <br>
+        <br>
+    Email:
+    <input type="text" name="email" placeholder="Enter your mail-id">
+    <br>
+    <br>
+    Address:
+    <input type="text" name="address" placeholder="Enter your address">
+    <br>
+    <br>
+    Country:
+        <select>
+            <option value="India">India</option>
+            <option value="china">China</option>
+            <option value="japan">Japan</option>
+            <option value="usa">U.S.A.</option>
+            <option value="usa">Russia</option>
+          </select>
+          <br><br>
+    Remarks(optional):
+          <br>
+          <textarea rows="4" cols="50" name="comment" >Enter text here...</textarea>
+          <br>
+          <br>
+          <button onclick="validateForm()">Submit</button>
+  </form>
+  <br>

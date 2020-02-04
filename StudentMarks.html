@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="result.js"></script>
+<style>
+body {
+    background-color: #9bdee7;
+  }
+  .topnav {
+  background-color: #333;
+  overflow: hidden;
+}
+h1 {
+  text-shadow: 2px 2px #948888;
+}
+.footer {
+  height: 3%;
+  margin-bottom: -180px;
+  clear: both;
+  position: relative;
+  background-color: rgb(153, 202, 209); 
+  color: rgb(95, 114, 119);
+  text-align: center;
+  border-radius: 10%;
+  border-style: solid;
+}
+img{
+  opacity: 0.3;
+}
+img:hover{
+  opacity:1.5;
+  transform: scale(1.3);
+}
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 1% 3%;
+  text-decoration: none;
+  font-size: 150%;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: rgb(34, 104, 101);
+  color: rgba(211, 223, 223, 0.609);
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+.head {
+  float: center;
+  color: black;
+  text-align: center;
+  padding: 5px;
+  text-decoration: none;
+  font-size: 50px; 
+  line-height: 10px;
+  border-radius: 20px;
+}
+.footer {
+  height: 3%;
+  margin-bottom: -180px;
+  clear: both;
+  position: relative;
+  background-color: rgb(153, 202, 209); 
+  color: rgb(95, 114, 119);
+  text-align: center;
+  border-radius: 10%;
+  border-style: solid;
+}
+.rcorners{
+  border-radius: 5%;
+  background: url(paper1.gif);
+  background-position: left top;
+  background-repeat: repeat;
+  padding: 2%; 
+  width: 90%;
+  height: 30%; 
+}
+</style>
+</head>
+<body>
+  <div class="rcorners">
+  <header>
+    <h1 style="text-align: center; text-decoration-color: rgba(252, 253, 253, 0.383);font: size 4px;">LIVE VIRTUAL CLASS</h1>
+  </header>
+</div>
+<fieldset style="width:50%; height:50% ;">
+    <legend><b>Enter below details:</b></legend>
+    <form name='form1>'
+    Name:<input type="text" id="txtName" placeholder="Enter your name"><br/>
+    <table border="4">
+        <tr><td>English</td><td><input type="text" id="txtEnglish"></td></tr>
+        <tr><td>GK</td><td><input type="text" id="txtMaths"></td></tr>
+        <tr><td>Maths</td><td><input type="text" id="txtScience"></td></tr>             
+    </table><br/><br/>
+    <input type="button" value="Get Result" onclick="getResult()">
+</fieldset>
+<fieldset style="width:50%; height:50% ;">
+    <legend><b>Your Result:</b></legend>
+<table border="4">
+    <tr><td>Total Marks</td><td><input type="text" id="txtTotalMarks" readonly></td></tr>
+    <tr><td>Percentage</td><td><input type="text" id="txtAvgMarks" readonly></td></tr>
+    <tr><td>Highest Marks</td><td><input type="text" id="txtHighestMarks" readonly></td></tr>
+    <tr><td>Grade</td><td><input type="text" id="txtGrade" readonly></td></tr>
+</table>
+</form>
+</fieldset>
+<div class="footer">
+    <footer>
+      <p>Copyright reserved @2020    Contact information: <a href="rahul:rkg@mymail.com">
+      someone@example.com</a>.</p>
+    </footer>
+    </div>
+</body>
+</html>

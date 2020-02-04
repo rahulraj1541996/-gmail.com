@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  .topnav {
+  background-color: #333;
+  overflow: hidden;
+}
+h1 {
+  text-shadow: 2px 2px #948888;
+}
+img{
+  opacity: 0.3;
+}
+img:hover{
+  opacity:1.5;
+  transform: scale(1.3);
+}
+</style>
+</head>
+<body onload="showPrompt()">
+  <div class="rcorners">
+  <header>
+    <h1 style="text-align: center; text-decoration-color: rgba(252, 253, 253, 0.383);font: size 10px;">Search by clicking on the button below</h1>
+</header>
+</div>
+<table border="0"> 
+<select id="ser">
+    <option value="India">Google</option>
+    <option value="china">Yahoo</option>
+    <option value="japan">Bing</option>
+    <option value="usa">duckduckgo</option>
+    <option value="russia">Russia</option>
+  </select>
+  search here:
+  <input type="text" id="s">
+  <button onclick="myFunction()">click me</button> 
+</table>
+
+<script>
+    function myFunction() 
+    {
+        var e=document.getElementById("ser");
+        var ser=e.options[e.selectedIndex].value;
+        var box=document.getElementById("s");
+        if(ser=="India")
+        {
+             location.replace("https://www.google.co.in/search?q=india");
+        }
+        else if(ser=="china")
+        {
+            location.replace("https://in.search.yahoo.com/search;_ylt=AwrwJXirVzlepjUA6Ca6HAx.");
+        }
+        else if(ser=="japan")
+        {
+            location.replace("https://www.bing.com/search?q=japan");
+        }
+        else if(ser=="usa")
+        {
+            location.replace("https://duckduckgo.com/?q=usa&ia=news");
+        }
+    }
+    </script>
+    </body>
+    </html>

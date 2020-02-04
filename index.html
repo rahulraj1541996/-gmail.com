@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+    background-image: url("bg1.gif");
+    background-color: #cccccc;
+  }
+  .topnav {
+  background-color: #333;
+  overflow: hidden;
+}
+h1 {
+  text-shadow: 2px 2px #948888;
+}
+img{
+  opacity: 0.3;
+}
+img:hover{
+  opacity:1.5;
+  transform: scale(1.3);
+}
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 1% 3%;
+  text-decoration: none;
+  font-size: 150%;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: rgb(34, 104, 101);
+  color: rgba(211, 223, 223, 0.609);
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+.head {
+  float: center;
+  color: black;
+  text-align: center;
+  padding: 5px;
+  text-decoration: none;
+  font-size: 50px; 
+  line-height: 10px;
+  border-radius: 20px;
+}
+.footer {
+  height: 3%;
+  margin-bottom: -180px;
+  clear: both;
+  position: relative;
+  background-color: rgb(153, 202, 209); 
+  color: rgb(95, 114, 119);
+  text-align: center;
+  border-radius: 10%;
+  border-style: solid;
+}
+.rcorners{
+  border-radius: 5%;
+  background: url(paper1.gif);
+  background-position: left top;
+  background-repeat: repeat;
+  padding: 2%; 
+  width: 90%;
+  height: 30%; 
+}
+.container {
+  width: 100%;
+  height: 100%;
+}
+
+.leftpane {
+     border-radius: 5%;
+     border-style: ridge;
+    width: 25%;
+    height: 95%;
+    float: left;
+    background-color: rgb(187, 214, 219);
+    border-collapse: collapse;
+}
+.middlepane {
+  border-radius: 5%;
+     border-style: ridge;
+    width: 50%;
+    height: 100%;
+    float: left;
+    background-color: rgb(143, 160, 173);
+    border-collapse: collapse;
+    padding-bottom:3%;
+}
+.rightpane {
+  border-radius: 6%;
+   border-style: solid;
+  width: 450px;
+  height: 650px;
+  position: relative;
+  float: right;
+  background-color: rgba(73, 141, 124, 0.438);
+  border-collapse: collapse;
+}
+</style>
+</head>
+<body onload="showPrompt()">
+  <div class="rcorners">
+  <header>
+    <h1 style="text-align: center; text-decoration-color: rgba(252, 253, 253, 0.383);font: size 10px;">LIVE VIRTUAL CLASS</h1>
+  </header>
+</div>
+  <div class="topnav">
+    <a class="active" href="#home">Home</a>
+    <a href="Registration.html">Registration</a>
+    <a href="#contact">Contact</a>
+    <a href="#about">About</a>
+    <a href="#courses">Courses</a>
+    <a href="search.html">search</a>
+    <a href="StudentMarks.html">Pre Test</a>
+    <a href="Quiz.html">Quiz</a>
+  </div>
+  <div class="container">
+    <div class="leftpane">
+      <h1>About Virtual Class</h1>
+      <p>Virtual classroom is an online learning environment, just like in a real-world classroom. A student in a virtual classroom
+         participates in synchronous instruction, which means that the teacher and students are logged into the virtual learning 
+         environment at the same time.</p>
+         <iframe width="100%" height="300px" src="https://www.youtube.com/embed/bLL5NbBEg2I" frameborder="0" 
+         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+         <h1>Key Features</h1>
+         <p>*High-definition video conferencing.<br>
+          *Secure live streaming.<br>
+          *Server-side recording.<br>
+          *Advanced interactive whiteboard.</p>
+        </div>
+    <div class="middlepane">
+      <h1>How it works:</h1>
+      <h3>1. How is an online classroom typically structured?</h3>
+
+        <p>This varies, experts say. But generally, online students regularly log in to a learning management system, 
+        or LMS, a virtual portal were students can view their syllabus and grades; contact professors, classmates and 
+        support services; access course materials; and monitor their progress on lessons.</p>
+        <h3>2. Do students need to attend classes at specific times?</h3>
+        <p>Online courses typically have an asynchronous, or self-paced, portion; 
+          students complete coursework on their own time but still need to meet weekly deadlines.</p>
+          <h3>3. Do online courses have in-person components?</h3>
+          <p>Some online classes may require students to attend a residency on the school's campus before or during the program.
+             The lengths and details of these requirements vary.</p>
+            <h3>4. What is the typical workload for an online class?</h3>
+            <p>Just like in traditional classes, this varies – but don't expect your course to be easier just because it's online.
+               Many online learners say they spend 15 to 20 hours a week on coursework.</p>
+               <h3>5. How do students interact in an online class?</h3>
+               <p>If a course has a synchronous component or requires students to travel to campus, that's a good way to get to know classmates, experts say.
+                  Students may otherwise communicate through discussion forums, social media and – particularly for group work –
+                   videoconferencing, as well as phone and email.</p>
+    </div>
+    <div class="rightpane">
+      <img src="live11.jpg">
+  </div>
+  <div class="footer">
+  <footer>
+    <p>Copyright reserved @2020    Contact information: <a href="rahul:rkg@mymail.com">
+    someone@example.com</a>.</p>
+  </footer>
+  </div>
+</body>
+</html>

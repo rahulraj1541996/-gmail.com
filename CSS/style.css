@@ -1,0 +1,20 @@
+body {
+  background-image: url("bg1.jpg");
+  background-color: #cccccc;
+}
+
+tr:nth-child(even) {
+background-color: #dddddd;
+}
+.header {
+overflow: hidden;
+background-color: #f1f1f1;
+padding: 20px 10px;
+}
+img{
+  opacity: 0.2;
+}
+img:hover{
+  opacity:1.0;
+  transform: scale(1.2);
+}

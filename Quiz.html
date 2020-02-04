@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+    background-image: url("bg1.gif");
+    background-color: #cccccc;
+  }
+  .topnav {
+  background-color: #333;
+  overflow: hidden;
+}
+h1 {
+  text-shadow: 2px 2px #948888;
+}
+img{
+  opacity: 0.3;
+}
+img:hover{
+  opacity:1.5;
+  transform: scale(1.3);
+}
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 1% 3%;
+  text-decoration: none;
+  font-size: 150%;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: rgb(34, 104, 101);
+  color: rgba(211, 223, 223, 0.609);
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+.head {
+  float: center;
+  color: black;
+  text-align: center;
+  padding: 5px;
+  text-decoration: none;
+  font-size: 50px; 
+  line-height: 10px;
+  border-radius: 20px;
+}
+.footer {
+  height: 3%;
+  margin-bottom: -180px;
+  clear: both;
+  position: relative;
+  background-color: rgb(153, 202, 209); 
+  color: rgb(95, 114, 119);
+  text-align: center;
+  border-radius: 10%;
+  border-style: solid;
+}
+.rcorners{
+  border-radius: 5%;
+  background: url(paper1.gif);
+  background-position: left top;
+  background-repeat: repeat;
+  padding: 2%; 
+  width: 100%;
+  height: 30%; 
+}
+.container {
+  width: 100%;
+  height: 100%;
+}
+.middlepane {
+    border-radius: 4%;
+     border-style: solid;
+    width: 100%;
+    height: 100%;
+    float: center;
+    background-color: rgb(143, 160, 173);
+    border-collapse: collapse;
+    padding:2%;
+}
+</style>
+</head>
+<body>
+  <div class="rcorners">
+  <header>
+    <h1 style="text-align: center; text-decoration-color: rgba(252, 253, 253, 0.383);font: size 10px;">LIVE VIRTUAL CLASS</h1>
+  </header>
+</div>
+<div class="middlepane">
+    <h1 align="center">Online Quiz test</h1>
+    <form>
+        <h2>Q1. HTML is used for:</h2>
+          <input type="radio" name="html" value="static">Creating static web page<br>
+          <input type="radio" name="html" value="dynamic">Creating dynamic web page<br>
+          <input type="radio" name="html" value="both">both<br>  
+        
+        <h2>Q2. JS is used for:</h2>
+          <input type="radio" name="html" value="app">Web applications<br>
+          <input type="radio" name="html" value="servers">web servers<br>
+          <input type="radio" name="html" value="none">both of the above<br>  
+        <br>
+          <input type="submit" value="Submit">
+        </form>
+</div>
+<div class="footer">
+    <footer>
+      <p>Copyright reserved @2020    Contact information: <a href="rahul:rkg@mymail.com">
+      someone@example.com</a>.</p>
+    </footer>
+    </div>
+  </body>
+  </html>
